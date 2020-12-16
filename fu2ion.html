@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fu2ion</title>
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="font/material-icons.css">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, 
+  maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+  <section class="inicio">
+    <div>
+      <button class="mticons som">volume_off</button>
+    </div>
+    <h1>Fu2ion</h1>
+    <h2>Tente fu2ionar as telhas até chegar em 2048</h2>
+    <h2>Corra contra o timer, faça pontos e ganhe mais tempo</h2>
+    <br>
+    <p><button class="start">Começar!</button></p>
+  </section>
+
+  <section class="jogo">
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">Fu2ion</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+        <div class="time-container"><span>0</span></div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <a class="restart-button"> Reiniciar (ou o botão " R ")</a>
+    </div>
+
+    <div class="game-container">
+        <p></p>
+        <div class="lower">
+	        <a class="restart-button"></a>
+          <a class="restart-button"></a>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+      <div class="tile-container">
+      </div>
+    </div>
+  </section>
+
+  <section class="vitoria">
+    <h2>VOCÊ é um GÊNIO da matemática!</h2>
+    <h2>Parabéns caro jogador, você venceu o desafio!</h2>
+    <br>
+    <p><button class="btn-novamente"><a class="restart"> Jogar Novamente? </a></button></p>
+  </section>
+
+  <section class="derrota">
+    <h2>VOCÊ perdeu O DESAFIO!</h2>
+    <h2>Desculpe jogador, mas parece que não foi dessa vez!</h2>
+    <br>
+    <p><button class="btn-novamente"><a class="restart"> Jogar Novamente </a></button></p>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+</body>
+</html>
